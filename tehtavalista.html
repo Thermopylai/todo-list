@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävälista</title>
+</head>
+<body>
+    <h1>Tehtävälista</h1>
+    <button id="tyhjennaLista">Tyhjennä lista</button><br><br>
+    <input id="tehtavaInput" type="text" placeholder="Kirjoita tehtävä">
+    <button id="lisaaTehtava">Lisää tehtävä</button>
+    <ul id="lista"></ul>
+
+    <script>
+        let tehtavat = [];
+
+        const tyhjennaLista = document.getElementById("tyhjennaLista");
+        const lista = document.getElementById("lista");
+        const tehtavaInput = document.getElementById("tehtavaInput");
+        const lisaaTehtava = document.getElementById("lisaaTehtava");
+
+        const paivitaLista = () => {
+            lista.innerHTML = "";
+
+            tehtavat.forEach(tehtava => {
+                let uusiRivi = document.createElement("li");
+                uusiRivi.style.marginBottom = "8px";
+
+                // Teksti erilliseen span-elementtiin
+                const tekstiSpan = document.createElement("span");
+                tekstiSpan.textContent = tehtava.teksti;
+
+                // Jos tehtävä on merkitty valmiiksi, yliviivaa teksti
+                if (tehtava.valmis) {
+                    tekstiSpan.style.textDecoration = "line-through";
+                }
+
+                const valmisNappi = document.createElement("button");
+                valmisNappi.textContent = tehtava.valmis ? "Peru valmis" : "Valmis";
+                valmisNappi.style.marginLeft = "8px";
+
+                valmisNappi.addEventListener("click", function() {
+                    tehtava.valmis = !tehtava.valmis;
+                    paivitaLista();
+                });
+
+                const poistaNappi = document.createElement("button");
+                poistaNappi.textContent = "Poista";
+                poistaNappi.style.marginLeft = "8px";
+
+                poistaNappi.addEventListener("click", function() {
+                    tehtavat = tehtavat.filter(t => t.id !== tehtava.id);
+                    paivitaLista();
+                });
+               
+                uusiRivi.appendChild(tekstiSpan);
+                uusiRivi.appendChild(valmisNappi);
+                uusiRivi.appendChild(poistaNappi);
+                lista.appendChild(uusiRivi);
+            });
+        };
+
+        lisaaTehtava.addEventListener("click", () => {
+            const uusiTehtava = tehtavaInput.value.trim();
+
+            if (uusiTehtava !== "") {
+                tehtavat.push({
+                    id: Date.now(),
+                    teksti: uusiTehtava,                    
+                    valmis: false
+                });
+                
+                tehtavaInput.value = "";
+                paivitaLista();
+            } else {
+                alert("Tehtävä ei saa olla tyhjä!");
+            }
+        });
+
+        tyhjennaLista.addEventListener("click", () => {
+            tehtavat = [];
+            paivitaLista();
+        });
+
+        tehtavaInput.addEventListener("keydown", (event) => {
+            if (event.key === "Enter") {
+                lisaaTehtava.click();
+            }
+        });
+    </script>
+</body>
+</html>
