@@ -1,5 +1,20 @@
 # :spiral_notepad: Tehtävälista (JavaScript DOM -harjoitus)
 
+![GitHub Pages](https://img.shields.io/badge/Live-Demo-green)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+
+## 📸 Esikatselu
+
+![Sovelluksen esikatselu](assets/screenshot.png)
+
+## 🔗 Live Demo
+
+👉 https://thermopylai.github.io/todo-list/tehtavalista.html
+
+---
+
+## 📖 Kuvaus
+
 Yksinkertainen selainpohjainen **tehtävälistasovellus**, jonka tarkoituksena on harjoitella **JavaScriptin DOM-manipulaatiota** sekä tapahtumankäsittelyä.
 
 Sovelluksessa käyttäjä voi lisätä tehtäviä listaan, merkitä ne valmiiksi sekä poistaa niitä. Lista päivittyy dynaamisesti JavaScriptin avulla ilman sivun uudelleenlatausta.
