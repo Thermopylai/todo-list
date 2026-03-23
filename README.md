@@ -1,4 +1,4 @@
-# Tehtävälista (JavaScript DOM -harjoitus)
+# :spiral_notepad: Tehtävälista (JavaScript DOM -harjoitus)
 
 Yksinkertainen selainpohjainen **tehtävälistasovellus**, jonka tarkoituksena on harjoitella **JavaScriptin DOM-manipulaatiota** sekä tapahtumankäsittelyä.
 
@@ -8,7 +8,7 @@ Projektin toteutus on tarkoituksella pidetty yksinkertaisena, jotta perusperiaat
 
 ---
 
-## Ominaisuudet
+## :hammer_and_wrench: Ominaisuudet
 
 - Uusien tehtävien lisääminen listaan
 - Tehtävän merkitseminen valmiiksi (yliviivattu teksti)
@@ -19,7 +19,7 @@ Projektin toteutus on tarkoituksella pidetty yksinkertaisena, jotta perusperiaat
 
 ---
 
-## Käytetyt teknologiat
+## :gear: Käytetyt teknologiat
 
 - **HTML**
 - **JavaScript**
@@ -35,7 +35,7 @@ JavaScript käyttää muun muassa seuraavia DOM-toimintoja:
 
 ---
 
-## Projektin rakenne
+## :file_folder: Projektin rakenne
 
 ```text
 tehtavalista/
@@ -48,7 +48,7 @@ Sovellus on toteutettu yhdessä HTML-tiedostossa, jossa JavaScript-koodi sijaits
 
 ---
 
-## Käyttö
+## :wrench: Käyttö
 
 1. Lataa projekti tai kloonaa repository:
 
@@ -66,7 +66,7 @@ tehtavalista.html
 
 ---
 
-## Mitä projektissa harjoitellaan
+## :muscle: Mitä projektissa harjoitellaan
 
 Projektin tavoitteena on harjoitella JavaScriptin keskeisiä perusteita:
 - DOM-elementtien luonti ja muokkaus
@@ -77,7 +77,7 @@ Projektin tavoitteena on harjoitella JavaScriptin keskeisiä perusteita:
 
 ---
 
-## Mahdollisia jatkokehitysideoita
+## :rocket: Mahdollisia jatkokehitysideoita
 
 - tehtävien tallennus **LocalStorageen**
 - tehtävien järjestäminen
