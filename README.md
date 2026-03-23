@@ -6,6 +6,8 @@ Sovelluksessa käyttäjä voi lisätä tehtäviä listaan, merkitä ne valmiiksi
 
 Projektin toteutus on tarkoituksella pidetty yksinkertaisena, jotta perusperiaatteet ovat helposti ymmärrettävissä.
 
+---
+
 ## Ominaisuudet
 
 - Uusien tehtävien lisääminen listaan
@@ -14,6 +16,8 @@ Projektin toteutus on tarkoituksella pidetty yksinkertaisena, jotta perusperiaat
 - Koko listan tyhjentäminen
 - Tehtävän lisääminen myös **Enter-näppäimellä**
 - Syötteen validointi (tyhjää tehtävää ei voi lisätä)
+
+---
 
 ## Käytetyt teknologiat
 
@@ -29,6 +33,8 @@ JavaScript käyttää muun muassa seuraavia DOM-toimintoja:
 - `addEventListener()`
 - `innerHTML`
 
+---
+
 ## Projektin rakenne
 
 ```text
@@ -39,6 +45,8 @@ tehtavalista/
 ```
 
 Sovellus on toteutettu yhdessä HTML-tiedostossa, jossa JavaScript-koodi sijaitsee `<script>`-tagin sisällä.
+
+---
 
 ## Käyttö
 
@@ -56,6 +64,8 @@ tehtavalista.html
 
 3. Lisää tehtäviä kirjoittamalla tekstikenttään ja painamalla **Lisää tehtävä.**
 
+---
+
 ## Mitä projektissa harjoitellaan
 
 Projektin tavoitteena on harjoitella JavaScriptin keskeisiä perusteita:
@@ -65,6 +75,8 @@ Projektin tavoitteena on harjoitella JavaScriptin keskeisiä perusteita:
 - yksinkertainen tilanhallinta (`valmis`-status)
 - dynaaminen käyttöliittymän päivitys
 
+---
+
 ## Mahdollisia jatkokehitysideoita
 
 - tehtävien tallennus **LocalStorageen**
@@ -72,3 +84,11 @@ Projektin tavoitteena on harjoitella JavaScriptin keskeisiä perusteita:
 - prioriteetit
 - käyttöliittymän parantaminen (esim. **Bootstrap**)
 - tehtävien muokkaaminen
+
+---
+
+## 👤 Tekijä
+
+**Lauri Tikkanen**
+
+GitHub: [Thermopylai](https://github.com/Thermopylai)
